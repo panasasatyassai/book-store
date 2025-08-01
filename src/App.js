@@ -1,17 +1,19 @@
 import {Component} from 'react'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'; 
 import './App.css';
+
 import Home from './components/Home';
 import BooksList from './components/BooksList';
 import BooksDetails from './components/BooksDetails';
 import Cart from './components/Cart';
 import Checkout from './components/Checkout';
 import NotFound from './components/NotFound';
+
 class App extends Component {
   render(){
     return (
        <>
-        <BrowserRouter>
+         <BrowserRouter>
         <Routes>
           <Route exact path='/' Component={Home} />
            <Route exact path='/books' Component={BooksList} />
